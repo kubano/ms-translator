@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script defer="" src="https://ssl.microsofttranslator.com/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**"
+        type="text/javascript"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Translator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div aria-label="Translate Text" id="translate" class="btn btn-sm btn-primary p-0 notranslate waves-effect waves-light"
+                    type="button" style="font-size:13px;box-shadow:0 0 0 0">Translate</div>
+                <ul class="tr-dd d-none">
+                    <li><a href="#" title="Translate to Español" class="notranslate tr-dd-link no-hover waves-effect waves-light"
+                            data-ln="es" id="lang-es" style="font-size:13px;line-height:0" onclick="translatorApp.Translate('es')">Español</a></li>
+                    <li><a href="#" title="Translate to Française" class="notranslate tr-dd-link no-hover waves-effect waves-light"
+                            data-ln="fr" id="lang-fr" style="font-size:13px;line-height:0"  onclick="translatorApp.Translate('fr')">Française</a></li>
+                     
+                    <li><a href="#" title="Translate to Português" class="notranslate tr-dd-link no-hover waves-effect waves-light"
+                            data-ln="pt" id="lang-pt" style="font-size:13px;line-height:0"  onclick="translatorApp.Translate('pt')">Português</a></li>
+                    
+                    <li><a href="#" title="Translate to German" class="notranslate tr-dd-link no-hover waves-effect waves-light"
+                            data-ln="de" id="lang-de" style="font-size:13px;line-height:0" onclick="translatorApp.Translate('de')">German</a></li>
+                </ul>
+
+                <main id="main" role="main" class="content" data-bi-name="content" lang="en-us" dir="ltr">
+
+
+
+                    <h1 id="what-is-translator-text-api" sourcefile="articles/cognitive-services/Translator/translator-info-overview.md"
+                        sourcestartlinenumber="15" sourceendlinenumber="15">What is Translator Text API?</h1>
+
+
+
+                    <nav id="center-doc-outline" class="doc-outline is-hidden-desktop" data-bi-name="intopic toc" role="navigation"
+                        aria-label="On page navigation">
+                        <h3>In this article</h3>
+                        <ol>
+                            <li><a href="#about-microsoft-translator">About Microsoft Translator</a></li>
+                            <li><a href="#language-support">Language support</a></li>
+                            <li><a href="#language-customization">Language customization</a></li>
+                            <li><a href="#microsoft-translator-neural-machine-translation">Microsoft Translator Neural
+                                    Machine
+                                    Translation</a></li>
+                            <li><a href="#next-steps">Next steps</a></li>
+                            <li><a href="#see-also">See also</a></li>
+                        </ol>
+                    </nav>
+
+                    <div id="counter" class="d-none"></div>
+
+                    <!-- <content> -->
+
+                    <p>The Translator Text API is easy to integrate in your applications, websites, tools, and
+                        solutions. It allows
+                        you to add multi-language user experiences in <a href="languages" data-linktype="relative-path">more
+                            than
+                            60 languages</a>, and can be used on any hardware platform with any operating system for
+                        text-to-text
+                        language translation.</p>
+                    <p>The Translator Text API is part of the Azure <a href="https://docs.microsoft.com/azure/#pivot=products&amp;panel=ai"
+                            data-linktype="external">Cognitive Services API</a> collection of machine learning and AI
+                        algorithms in
+                        the cloud, and is readily consumable in your development projects.</p>
+                    <h2 id="about-microsoft-translator" class="heading-with-anchor">About Microsoft Translator<a class="docon docon-link heading-anchor"
+                            tabindex="-1" aria-hidden="true" href="#about-microsoft-translator"></a></h2>
+                    <p>Microsoft Translator is a cloud-based machine translation service. The core service is the
+                        Translator Text
+                        API, which powers a number of Microsoft products and services, and is used by thousands of
+                        businesses
+                        worldwide in their applications and workflows, which allows their content to reach a global
+                        audience.</p>
+                    <p>Speech translation, powered by the Translator Text API, is also available through the <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/"
+                            data-linktype="external">Microsoft Speech Service</a>. It combines functionality from the
+                        Translator
+                        Speech API, Bing Speech API, and Custom Speech Service (preview) into a unified and fully
+                        customizable
+                        service. Speech Service is replacing the Translator Speech API, which will be decommissioned on
+                        October 15,
+                        2019.</p>
+                    <h2 id="language-support" class="heading-with-anchor">Language support<a class="docon docon-link heading-anchor"
+                            tabindex="-1" aria-hidden="true" href="#language-support"></a></h2>
+                    <p>Microsoft Translator provides multi-language support for translation, transliteration, language
+                        detection,
+                        and dictionaries. See <a href="language-support" data-linktype="relative-path">language support</a>
+                        for a
+                        complete list, or access the list programmatically with the <a href="https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-languages"
+                            data-linktype="external">REST API</a>. </p>
+                    <h2 id="language-customization" class="heading-with-anchor">Language customization<a class="docon docon-link heading-anchor"
+                            tabindex="-1" aria-hidden="true" href="#language-customization"></a></h2>
+                    <p>An extension of the core Microsoft Translator service, Custom Translator can be used in
+                        conjunction with the
+                        Translator Text API to help you customize the neural translation system and improve the
+                        translation for
+                        your specific terminology and style.</p>
+                    <p>With Custom Translator, you can build translation systems that handle the terminology used in
+                        your own
+                        business or industry. Your customized translation system will then easily integrate into your
+                        existing
+                        applications, workflows, and websites, across multiple types of devices, through the regular
+                        Microsoft
+                        Translator Text API, by using the category parameter.</p>
+                    <p>Learn more about <a href="customization" data-linktype="relative-path">language customization</a></p>
+                    <h2 id="microsoft-translator-neural-machine-translation" class="heading-with-anchor">Microsoft
+                        Translator
+                        Neural Machine Translation<a class="docon docon-link heading-anchor" tabindex="-1" aria-hidden="true"
+                            href="#microsoft-translator-neural-machine-translation"></a></h2>
+                    <p>Neural Machine Translation (NMT) is the new standard for high-quality AI-powered machine
+                        translations. It
+                        replaces the legacy Statistical Machine Translation (SMT) technology that reached a quality
+                        plateau in the
+                        mid-2010s.</p>
+                    <p>NMT provides better translations than SMT not only from a raw translation quality scoring
+                        standpoint but
+                        also because they will sound more fluent and human. The key reason for this fluidity is that
+                        NMT uses the
+                        full context of a sentence to translate words. SMT only took the immediate context of a few
+                        words before
+                        and after each word.</p>
+                    <p>NMT models are at the core of the API and are not visible to end users. The only noticeable
+                        difference is
+                        improved translation quality, especially for languages such as Chinese, Japanese, and Arabic.</p>
+                    <p>Learn more about <a href="https://www.microsoft.com/en-us/translator/mt.aspx#nnt" data-linktype="external">how
+                            NMT works</a></p>
+                    <h2 id="next-steps" class="heading-with-anchor">Next steps<a class="docon docon-link heading-anchor"
+                            tabindex="-1" aria-hidden="true" href="#next-steps"></a></h2>
+                    <ul>
+                        <li>
+                            <p>Read about <a href="https://azure.microsoft.com/pricing/details/cognitive-services/translator-text-api/"
+                                    data-linktype="external">pricing details</a>.</p>
+                        </li>
+                        <li>
+                            <p><a href="translator-text-how-to-signup" data-linktype="relative-path">Sign up</a> for an
+                                access key.</p>
+                        </li>
+                        <li>
+                            <p><a href="quickstarts/csharp" data-linktype="relative-path">Quickstart</a> is a
+                                walkthrough of the
+                                REST API calls written in C#. Learn how to translate text from one language to another
+                                with minimal
+                                code.</p>
+                        </li>
+                        <li>
+                            <p><a href="https://docs.microsoft.com/azure/cognitive-services/Translator/reference/v3-0-reference"
+                                    data-linktype="external">API reference documentation</a> provides the technical
+                                documentation
+                                for the APIs.</p>
+                        </li>
+                    </ul>
+                    <h2 id="see-also" class="heading-with-anchor">See also<a class="docon docon-link heading-anchor"
+                            tabindex="-1" aria-hidden="true" href="#see-also"></a></h2>
+                    <ul>
+                        <li><a href="https://docs.microsoft.com/azure/#pivot=products&amp;panel=ai" data-linktype="external">Cognitive
+                                Services Documentation page</a></li>
+                        <li><a href="https://azure.microsoft.com/services/cognitive-services/" data-linktype="external">Cognitive
+                                Services Product page</a></li>
+                        <li><a href="https://www.microsoft.com/en-us/translator/default.aspx" data-linktype="external">Solution
+                                and
+                                pricing information</a></li>
+                    </ul>
+
+                    <!-- </content> -->
+
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="translatorApp.js"></script>
+    <script type="text/javascript">
+         
+        $("#translate").on("click", function (e) {
+            $("ul.tr-dd").toggleClass("d-none");
+            e.stopPropagation();
+
+        });
+        $(document).on("click", function (e) {
+            $('#WidgetFloaterPanels').addClass('d-none');
+            if ($(e.target).is("ul.tr-dd") === false) {
+                $("ul.tr-dd").removeClass("d-none");
+            }
+
+
+
+        });
+
+         
+
+
+
+
+        //Spanish
+        //document.getElementById("lang-es").onclick = function () {
+         //   Microsoft.Translator.Widget.Translate('en', 'es', onProgress, onError, onComplete, onRestoreOriginal, 8000);
+         //   Microsoft.Translator.Widget.domTranslator.showHighlight = false;
+        //    Microsoft.Translator.Widget.domTranslator.showTooltips = false;
+        //}
+        //French
+        document.getElementById("lang-fr").onclick = function () {
+            Microsoft.Translator.Widget.Translate('en', 'fr', onProgress, onError, onComplete, onRestoreOriginal, 8000);
+            Microsoft.Translator.Widget.domTranslator.showHighlight = false;
+            Microsoft.Translator.Widget.domTranslator.showTooltips = false;
+        }
+        
+        //Portuguese
+        document.getElementById("lang-pt").onclick = function () {
+            Microsoft.Translator.Widget.Translate('en', 'pt', onProgress, onError, onComplete, onRestoreOriginal, 8000);
+            Microsoft.Translator.Widget.domTranslator.showHighlight = false;
+            Microsoft.Translator.Widget.domTranslator.showTooltips = false;
+        }
+         
+        //German
+        document.getElementById("lang-de").onclick = function () {
+            Microsoft.Translator.Widget.Translate('en', 'de', onProgress, onError, onComplete, onRestoreOriginal, 8000);
+            Microsoft.Translator.Widget.domTranslator.showHighlight = false;
+            Microsoft.Translator.Widget.domTranslator.showTooltips = false;
+        }
+        //You can use Microsoft.Translator.Widget.GetLanguagesForTranslate to map the language code with the language name
+        function onProgress(value) {
+            document.getElementById('counter').innerHTML = Math.round(value);
+        }
+        function onError(error) {
+            alert("Translation Error: " + error);
+        }
+        function onComplete() {
+            document.getElementById('counter').style.color = 'green';
+        }
+
+        //fires when the user clicks on the exit box of the floating widget
+        function onRestoreOriginal() {
+            alert("The page was reverted to the original language. This message is not part of the widget.");
+        }
+    </script>
+</body>
+
+</html>
